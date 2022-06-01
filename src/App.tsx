@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Counter from './Counter/Counter';
+import TodoList from './Todos/TodoList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className={'Counter'}>
+                <h1>Counter(RTK QUERY)</h1>
+                <Counter/>
+            </div>
+            <hr/>
+            <div className={'Todos'}>
+                <h1>Todos(RTK QUERY)</h1>
+                <TodoList/>
+            </div>
+        </div>
+    );
 }
 
 export default App;
