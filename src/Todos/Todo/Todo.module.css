@@ -1,0 +1,14 @@
+.mainBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.todos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.todoInput{
+    width: 400px;
+    height: 20px;
+}
